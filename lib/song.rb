@@ -15,7 +15,7 @@ class Song
     new_song = self.new(song)
     new_song.artist = artist
     binding.pry
-    new_song.artist = Artist.find_or_create_by_name(artist)
+    new_song.artist = Artist.create(artist)
     new_song
 
 
