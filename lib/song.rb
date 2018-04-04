@@ -14,10 +14,10 @@ class Song
     song = filename.split(" - ")[1]
     new_song = self.new(song)
     new_song.artist = artist
-    binding.pry
     new_song.artist = Artist.create(artist)
     new_song.artist.add_song(song)
     new_song
+    binding.pry
 
 
   end
